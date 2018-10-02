@@ -1,0 +1,35 @@
+
+/* 
+.my-gallery-class{
+    display: flex;
+    box-sizing: border-box;
+}
+.image-element-class{
+    display: flex;
+
+} */
+.photo{
+    border-radius: 5px;
+    border: transparent;
+    margin: 20px;
+    max-width: 260px;
+    max-height: 200px
+}
+
+.photo2{
+    border-radius: 5px;
+    border: transparent;
+    margin: 20px;
+    max-width: 260px;
+    max-height: 260px
+
+}
+
+.photo3{
+    border-radius: 5px;
+    border: transparent;
+    margin: 20px;
+    max-width: 260px;
+    max-height: 360px
+
+}

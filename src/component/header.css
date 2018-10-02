@@ -1,0 +1,20 @@
+.containerHeader{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 16px;
+    padding: 4PX 16px;
+    font-family: "Segoe UI";
+    border-bottom: 1px solid #efefef;
+    height: 56px;
+}
+
+.headerLinks{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color: #8E8E8E;
+    width:33%;  
+    font: bolder ;
+
+}

@@ -1,0 +1,30 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.0.3",
+    "@material-ui/icons": "^3.0.1",
+    "@material-ui/lab": "^3.0.0-alpha.15",
+    "express": "^4.16.3",
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.2",
+    "material-ui": "^0.20.2",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "material-ui-search-bar": "^1.0.0-beta.11",
+    "mongoose": "^5.2.13",
+    "mongoose-paginate": "^5.0.3",
+    "nodemon": "^1.18.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-masonry-component": "^6.2.1",
+    "react-scripts": "1.1.5",
+    "react-search-field": "0.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

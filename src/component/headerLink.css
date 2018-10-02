@@ -1,0 +1,11 @@
+.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover {
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    padding: 8px
+}
+
+.home , .userName , .following , .explore {
+    color: #8E8E8E;
+    width:33%;  
+    font-weight: bolder ;
+}
