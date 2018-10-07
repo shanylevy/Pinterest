@@ -8,7 +8,7 @@ class Search extends Component{
       return (
         <div className="containerSearch">
             <button className='SearchBtn' type="submit"><i class="fa fa-search"></i></button>
-            <input className='inputSearch'   type="text" placeholder="Search..." name="search"></input>
+            <input className='inputSearch'   type="text" placeholder="Search" name="search"></input>
     </div>
 
         );

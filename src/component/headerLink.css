@@ -1,11 +1,25 @@
-.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover {
+.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover,commentLink:hover {
     border-radius: 10px;
     background-color: #F0F0F0;
     padding: 8px
 }
 
-.home , .userName , .following , .explore {
+.home , .userName , .following , .explore ,.commentLink {
     color: #8E8E8E;
     width:33%;  
     font-weight: bolder ;
+}
+
+.userPhoto{
+    border-radius: 50%;
+    width: 30px;
+}
+
+.userNameLink , .userName ,.userPhoto{
+    display: inline-flex;
+    align-items: center
+}
+
+.userPhoto{
+    margin-right: 2px;
 }

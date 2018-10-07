@@ -3,7 +3,8 @@ import Masonry from 'react-masonry-component';
 import  './gallery.css';
  
 const masonryOptions = {
-    transitionDuration: 0
+    transitionDuration: 0,
+    fitWidth:true
 };
 
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
@@ -12,15 +13,11 @@ class Gallery extends React.Component {
     render() {
         const childElements = this.props.elements.map(function(element){
            return (
-               <div className="gallerycontainer">
-                    <div className="image-element-class">
+               
+                    <div className="box">
                         <img className="photo" src={element.src} />
-                    </div>
-                    <div className="image-element-class">
-                        <img className="photo2" src={element.src} />
-                        <img className="photo3" src={element.src} />
-                  </div>
-             </div>
+                    </div>                  
+             
             );
         });
     
@@ -31,7 +28,7 @@ class Gallery extends React.Component {
                 options={masonryOptions} // default {}
                 disableImagesLoaded={false} // default false
                 updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                imagesLoadedOptions={imagesLoadedOptions} // default {}
+              
 
             >
                 {childElements}
@@ -42,3 +39,4 @@ class Gallery extends React.Component {
 
  
 export default Gallery;
+//imagesLoadedOptions={imagesLoadedOptions} // default {}
