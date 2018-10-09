@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import './headerLink.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCommentDots, faCommentAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import shany from '../img/shany.jpg';
-
+import CommentLink from './commentLink'
+import BellLink from './bellLink'
+import DotsLink from './dotsLink'
 
 library.add(faCommentDots)
 
@@ -29,9 +30,14 @@ class HeaderLink extends Component{
                         <div className="userName">{this.props.name}</div>
                     </div>
                     <div className="commentLink" >
-                     <FontAwesomeIcon icon='comment-dots'/>
+                     <CommentLink/>
                     </div>
-
+                    <div className="bellLink" >
+                     <BellLink/>
+                    </div>
+                    <div className="dotsLink" >
+                     <DotsLink/>
+                    </div>
                 </div>    
     
             );

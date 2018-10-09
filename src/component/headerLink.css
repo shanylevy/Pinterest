@@ -1,25 +1,31 @@
-.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover,commentLink:hover {
+.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover,.commentLink:hover, .bellLink:hover {
     border-radius: 10px;
     background-color: #F0F0F0;
-    padding: 8px
+    padding: 4px 8px;
+    
 }
 
-.home , .userName , .following , .explore ,.commentLink {
+.home , .userName , .following , .explore {
     color: #8E8E8E;
-    width:33%;  
     font-weight: bolder ;
+}
+.bellLink ,.commentLink{
+    font-size: 20px
+}
+
+.headerLinks{
+    width:33%;  
+
 }
 
 .userPhoto{
     border-radius: 50%;
     width: 30px;
+    margin-right: 2px;
+
 }
 
 .userNameLink , .userName ,.userPhoto{
     display: inline-flex;
     align-items: center
-}
-
-.userPhoto{
-    margin-right: 2px;
 }

@@ -8,7 +8,7 @@ class Logo extends Component{
       return (
         <div className="containerLogo">
 
-            <a href="https://www.google.com">
+            <a href="https://www.pinterest.com">
             <img className="img-logo" alt="logo" src={img} ></img></a>
     </div>
 

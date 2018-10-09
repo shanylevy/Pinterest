@@ -3,15 +3,38 @@
     margin: 10px;
     border-radius: 8px;
     cursor: zoom-in;
-}
-.box img:hover{
-    background-color: rgba(242, 242, 242, 0.836);
-    opacity: 0.8;
 
+}
+.box :hover{
+    /* filter: brightness(0.7) */
+opacity: 0.5;
+background-color: black
 }
 
 
 
 .my-gallery-class{
-    margin-left: 120px
+    margin-left: 120px;
+}
+
+.photoText , .dotsText{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black
+
+}
+
+.photoTextDot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 236px;
+
+}
+
+.dotsText{
+    color: #8E8E8E;
+    font-size: 10px
 }
