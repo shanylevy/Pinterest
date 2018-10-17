@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './headerLink.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
-import shany from '../img/shany.jpg';
+import shany from '../img/userPhoto.jpg';
 import CommentLink from './commentLink'
 import BellLink from './bellLink'
 import DotsLink from './dotsLink'

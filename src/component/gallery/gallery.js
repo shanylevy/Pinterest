@@ -8,17 +8,21 @@ const masonryOptions = {
     React:true
 };
 
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
+// const imagesLoadedOptions = { background: '.my-bg-image-el' }
  
 class Gallery extends React.Component {
+    
+      handleClick(){
+        console.log('this is:', this);
+      }
+
     render() {
-        const childElements = this.props.elements.map(function(element){
+        const childElements = this.props.elements.map((element)=>{
            return (
-                    <div className="box">
+                    <div className="box" onClick={this.handleClick}>
                         <img className="photo" src={element.src} />
                         <div className="photoTextDot">
-                            <h1 className="photoText">{element.text}</h1>
-                            <h1 className="dotsText">{element.DotsLink}</h1>
+                            <span className="photoText">{element.text} </span>
                         </div>
                     </div>                  
             );

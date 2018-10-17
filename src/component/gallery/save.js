@@ -1,13 +1,13 @@
 
 import React, { Component } from 'react'; 
-
+import './save.css'
 class Save extends Component{
   
     render() {
       return (
 
                 <div className="save" >
-                 <h1> bbbbbbb </h1>
+                 <span> SAVE </span>
                 </div>
         );
   

@@ -6,27 +6,27 @@ let elements = [
  
     {
         src: 'https://i.pinimg.com/564x/54/ea/b2/54eab222a5db6fd8fc26cb67d3b48202.jpg',
-        text : "dddddd",
+        text : "50 Winter Outfit Ideas For 2017 That Are Stylish AF",
         DotsLink:< DotsLink />
     },
     {
         src: 'https://i.pinimg.com/564x/ea/41/09/ea41092628a46045d83c68aafa847170.jpg',
-        text : "dddddd",
+        text : "DIY Catch of the Day: Fabric and Lace Fishes - could be made with old hankies ",
         DotsLink:< DotsLink />
     },
     {
         src: 'https://i.pinimg.com/564x/bf/48/14/bf4814768eb7a867f180da8e39c01326.jpg',
-        text : "dddddd",
+        text : "36 Trending Nail Colors Fall Winter ...",
         DotsLink:< DotsLink />
     },
     {
         src: 'https://i.pinimg.com/564x/af/eb/03/afeb031e74b07e6542133730148ecf4f.jpg',
-        text : "Trending Nail Colors Fall Winter 36...",
+        text : "36 Trending Nail Colors Fall Winter ...",
         DotsLink:< DotsLink />
     },
     {
         src: 'https://i.pinimg.com/564x/0a/46/0e/0a460ea691cbe76c2ad22be6753b6f96.jpg',
-        text : "dddddd",
+        text : "Christmas Tree",
         DotsLink:< DotsLink />
     },
     {

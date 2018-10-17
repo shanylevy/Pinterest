@@ -1,0 +1,31 @@
+.PlusBtn{
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 3px #f5f2f2;
+    position: fixed;
+    top: 70%;
+    left: 95%;
+    padding: 10px 15px;
+  
+
+}
+
+button{
+    border-style: none;
+    background: none;  
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.cameraUpload{
+    display: flex;
+    margin: 30px 70px;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+.drop{
+    font-size: 16px;
+    padding-left: 10px
+}
