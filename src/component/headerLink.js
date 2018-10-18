@@ -4,9 +4,7 @@ import './headerLink.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import shany from '../img/userPhoto.jpg';
-import CommentLink from './commentLink'
-import BellLink from './bellLink'
-import DotsLink from './dotsLink'
+import HeaderTabs from './headerTabs'
 
 library.add(faCommentDots)
 
@@ -30,13 +28,13 @@ class HeaderLink extends Component{
                         <div className="userName">{this.props.name}</div>
                     </div>
                     <div className="commentLink" >
-                     <CommentLink/>
+                     <HeaderTabs icon='comment-dots'/>
                     </div>
                     <div className="bellLink" >
-                     <BellLink/>
+                    <HeaderTabs icon='ellipsis-h' />
                     </div>
                     <div className="dotsLink" >
-                     <DotsLink/>
+                     <HeaderTabs icon='bell' />
                     </div>
                 </div>    
     

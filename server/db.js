@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-let DB_URL =process.env.DB_URL || 'mongodb://localhost:27017/pinterest'
+const DB_URL =process.env.DB_URL || 'mongodb://localhost:27017/pinterestNew'
 // let DB_URL = 'mongodb://localhost:27017/pinterest'
 
 

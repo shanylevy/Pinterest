@@ -6,7 +6,15 @@ const Pins = require('./feedMoodel');
 
 
 router.get('/', (req, res) => {
-    Pins.find()
+	let filter = {}
+    if (req.query.search) {
+        let regex = new RegExp(req.query.search, 'i')
+        filter.$or = [
+            { body: regex },
+            { title: regex }
+        ]
+    }
+    Pins.find(filter)
     .then(pins => res.send(pins))
     .catch(err => res.status(400).send(err.message));
 });
@@ -15,7 +23,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     // const newPin = {
     //     src : req.body.src,
-    //     text : req.body.text
+    //     title : req.body.title
     // }
 	const pin = new Pins(req.body);
 	pin.save()
@@ -23,6 +31,12 @@ router.post('/', (req, res) => {
 		.catch(e => res.status(400).send(e.message));
 	
 });
+
+router.delete('/:pinId', (req,res) => {
+    Pin.findByIdAndRemove(req.params.pinId)
+    .then(pin => res.send(pin))
+    .catch(err => res.status(400).send(err.message));
+})
 
 
 module.exports = router;

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-component';
 import  './gallery.css';
+import HeaderTabs from '../../component/headerTabs'
 
  
 const masonryOptions = {
@@ -16,12 +17,13 @@ class Gallery extends React.Component {
       }
 
     render() {
-        const childElements = this.props.pins.map((pins)=>{
+        const childElements = this.props.pins.map((pin)=>{
            return (
-                    <div key={this.props._id} className="box" onClick={this.handleClick}>
-                        <img className="photo" src={this.props.src} />
+                    <div key={pin._id} className="box" onClick={this.handleClick}>
+                        <img className="photo" src={pin.src} />
                         <div className="photoTextDot">
-                            <span className="photoText">{this.props.text} </span>
+                            <span className="photoText">{pin.title} </span>
+                            <span> <HeaderTabs icon='ellipsis-h' /> </span>
                         </div>
                     </div>                  
             );
