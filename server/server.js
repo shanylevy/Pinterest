@@ -1,13 +1,14 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const users = require('./users');
-const posts = require('./posts/');
 const server = express();
 const fath = require ( 'path')
+const bodyParser = require('body-parser');
+const pins = require('./feedGallery');
+const cors = require('cors')
 
 server.use(bodyParser.json());
+server.use("/api/pins/", pins);
+server.use(cors());
 
-server.use("/api/users/", users);
-server.use("/api/posts/", posts);
+
 server.use(express.static(fath.join(__dirname,'../build')))
 server.listen(8080);

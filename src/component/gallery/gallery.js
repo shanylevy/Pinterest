@@ -1,14 +1,13 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-component';
 import  './gallery.css';
+
  
 const masonryOptions = {
     transitionDuration: 0,
     fitWidth:true,
     React:true
 };
-
-// const imagesLoadedOptions = { background: '.my-bg-image-el' }
  
 class Gallery extends React.Component {
     
@@ -17,12 +16,12 @@ class Gallery extends React.Component {
       }
 
     render() {
-        const childElements = this.props.elements.map((element)=>{
+        const childElements = this.props.pins.map((pins)=>{
            return (
-                    <div className="box" onClick={this.handleClick}>
-                        <img className="photo" src={element.src} />
+                    <div key={this.props._id} className="box" onClick={this.handleClick}>
+                        <img className="photo" src={this.props.src} />
                         <div className="photoTextDot">
-                            <span className="photoText">{element.text} </span>
+                            <span className="photoText">{this.props.text} </span>
                         </div>
                     </div>                  
             );
