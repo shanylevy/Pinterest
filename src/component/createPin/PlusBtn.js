@@ -14,7 +14,7 @@ import UploadPin from './uploadPin'
             <h1 className='createPinHeader'>Create a Pin</h1>
             <UploadPin/>        
             <span> website </span>
-            <button type='submit'> Upload  </button>
+            <button type='submit' > Upload  </button>
         </Popup>
 
 

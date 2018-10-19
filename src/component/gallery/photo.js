@@ -1,4 +1,4 @@
- import DotsLink from '../dotsLink'
+ import DotsLink from '../headerTabs'
  import * as React from 'react';
 
 

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './component/header.css';
-import Header from './component/mainHeader';
+import './component/header/header.css';
+import Header from './component/header/mainHeader';
 import Gallery from './component/gallery/gallery.js';
-import PlusBtn from './common/link/createPin'
-import CreatePin from './common/link/createPin'
+import CreatePin from './component/createPin/createPin'
 
 class App extends Component {
 

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import './headerLink.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
-import shany from '../img/userPhoto.jpg';
-import HeaderTabs from './headerTabs'
+import shany from '../../img/userPhoto.jpg';
+import Tabs from '../../common/services/fontawesome'
 
 library.add(faCommentDots)
 
@@ -28,13 +28,13 @@ class HeaderLink extends Component{
                         <div className="userName">{this.props.name}</div>
                     </div>
                     <div className="commentLink" >
-                     <HeaderTabs icon='comment-dots'/>
-                    </div>
-                    <div className="bellLink" >
-                    <HeaderTabs icon='ellipsis-h' />
+                     <Tabs icon='comment-dots'/>
                     </div>
                     <div className="dotsLink" >
-                     <HeaderTabs icon='bell' />
+                     <Tabs icon='bell' />
+                    </div>
+                    <div className="bellLink" >
+                    <Tabs icon='ellipsis-h' />
                     </div>
                 </div>    
     

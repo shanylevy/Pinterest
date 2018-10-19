@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-component';
 import  './gallery.css';
-import HeaderTabs from '../../component/headerTabs'
+import fortawesomeservice from '../../common/services/fontawesome'
 
  
 const masonryOptions = {
@@ -23,7 +23,7 @@ class Gallery extends React.Component {
                         <img className="photo" src={pin.src} />
                         <div className="photoTextDot">
                             <span className="photoText">{pin.title} </span>
-                            <span> <HeaderTabs icon='ellipsis-h' /> </span>
+                            <span> <fortawesomeservice icon='ellipsis-h' /> </span>
                         </div>
                     </div>                  
             );
