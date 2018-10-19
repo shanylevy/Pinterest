@@ -11,4 +11,11 @@ server.use(cors());
 
 
 server.use(express.static(fath.join(__dirname,'../build')))
-server.listen(8080);
+// server.listen(8080)
+server.listen(process.env.PORT || 8080,(error)=>{
+
+    if(error)console.log(error.message);
+
+    console.log('Listening...')
+
+});
