@@ -4,28 +4,29 @@ import Fragment from "react-dropzone";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
-import './plusBtn.css'
-import PlusBtn from './PlusBtn'
+import '../createPin/plusBtn.css'
+import UploadPin from './uploadPin'
 
 library.add(faCamera)
 
 
-class UploadPin extends Component {
-  constructor(props) {
-    super(props);
+class Dropzone extends Component {
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          files: [],
+        };
+      }
 
-    this.state = {
-      files: [],
-    };
-  }
-  fileSelectedHandler = event => {
-    this.setState({
-      selectedFile: event.target.files[0]
-
-    })
-    console.log(event.target.files[0])
-
-  }
+      fileSelectedHandler = event => {
+        this.setState({
+          selectedFile: event.target.files[0]
+    
+        })
+        console.log(event.target.files[0])
+    
+      }
 
   onPreviewDrop = (files) => {
     this.setState({
@@ -45,7 +46,6 @@ class UploadPin extends Component {
       <div onChange={this.fileSelectedHandler} className="drop">
         <ReactDropzone
           accept="image/*"
-          // onDrop={this.onPreviewDrop}
         >
           <FontAwesomeIcon className='cameraUpload' icon='camera' />
           Drag and drop or click to upload!
@@ -61,14 +61,13 @@ class UploadPin extends Component {
               />
             ))}
           </Fragment>
-          
-        }
 
-        <PlusBtn seletedFile={this.fileSelectedHandler.bind(this)} />
-        
+        }  
+        <UploadPin seletedFile={this.state.selectedFile} />
+
       </div>
     );
   }
 }
 
-export default UploadPin;
+export default Dropzone;

@@ -1,13 +1,14 @@
-.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover,.commentLink:hover, .bellLink:hover {
+.homeLink:hover , .userNameLink:hover , .followingLink:hover , .exploreLink:hover,.commentLink:hover, .bellLink:hover , .backHomeBtn:hover {
     border-radius: 10px;
     background-color: #F0F0F0;
     padding: 4px 8px;
+    max-width: max-content;
     
 }
 
 .home , .userName , .following , .explore {
     color: #8E8E8E;
-    font-weight: bolder ;
+    text-decoration: none
 }
 .bellLink ,.commentLink{
     font-size: 20px

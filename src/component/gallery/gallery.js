@@ -1,34 +1,43 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-component';
-import  './gallery.css';
-import fortawesomeservice from '../../common/services/fontawesome'
+import './gallery.css';
+import Tabs from '../../common/services/fontawesome'
+import { withRouter } from 'react-router-dom';
+import pinPage from '../pinPage/pinPage'
+import { Link, Route } from 'react-router-dom';
 
- 
+
+
 const masonryOptions = {
     transitionDuration: 0,
-    fitWidth:true,
-    React:true
+    fitWidth: true,
+    React: true
 };
- 
+
 class Gallery extends React.Component {
-    
-      handleClick(){
-        console.log('this is:', this);
-      }
 
     render() {
-        const childElements = this.props.pins.map((pin)=>{
-           return (
-                    <div key={pin._id} className="box" onClick={this.handleClick}>
+        const childElements = this.props.pins.map((pin) => {
+
+            return (
+
+                <div key={pin._id} className="box" >
+                    <Link to= '/pinPage' >
+
                         <img className="photo" src={pin.src} />
-                        <div className="photoTextDot">
-                            <span className="photoText">{pin.title} </span>
-                            <span> <fortawesomeservice icon='ellipsis-h' /> </span>
-                        </div>
-                    </div>                  
+                    </Link>
+
+                    <div className="photoTextDot">
+
+                        <span className="photoText">{pin.title} </span>
+                        <span> <Tabs icon='ellipsis-h' /> </span>
+                    </div>
+                </div>
+
+
             );
         });
-    
+
         return (
             <Masonry
                 className={'my-gallery-class'} // default ''
@@ -43,5 +52,5 @@ class Gallery extends React.Component {
     }
 }
 
- 
-export default Gallery;
+
+export default withRouter(Gallery);

@@ -21,14 +21,15 @@ border-radius: 8px;
     margin-left: 120px;
 }
 
-.photoText , .dotsText{
+.photoText , a , .dotsText{
     font-size: 14px;
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
     color: black;
     font-weight: bold;
-    font-family: "Segoe UI"
+    font-family: "Segoe UI";
+    text-decoration: none
 }
 
 .photoTextDot{
@@ -36,6 +37,7 @@ border-radius: 8px;
     justify-content: space-between;
     align-items: center;
     width: 236px;
+    margin-left: 20px
 
 }
 
